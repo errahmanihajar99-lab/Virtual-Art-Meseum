@@ -1,0 +1,96 @@
+/* Contenedor de inicio de sesión con una imagen de fondo */
+.login{
+    min-height : 100vh;
+    display    : grid;
+    place-items: center;
+
+    background-image   : url(../image/login.webp);
+    background-size    : cover;
+    background-repeat  : no-repeat;
+    background-position: 75%;
+    
+}
+
+h1{
+    text-decoration: underline;
+}
+
+/* Organiza los campos del formulario en una columna */
+.login_form{
+    display       : flex;
+    flex-direction: column;
+    gap           : 28px;
+    width         : 300px;
+}
+
+/* Aplica una sombra de distinto color a cada campo */
+.name{
+    border-color: var(--salmon);
+    box-shadow  : 0 0 15px var(--salmon);
+}
+
+.email{
+    border-bottom: var(--fire);
+    box-shadow   : 0 0 15px var(--fire);
+}
+
+.password{
+    border-color: var(--earth);
+    box-shadow  : 0 0 15px var(--earth);
+}
+
+
+/* Distribuye el enlace de recuperación y el botón de inicio de sesión */
+.login_button{
+    display        : flex;
+    justify-content: space-between;
+    align-items    : center;
+    margin-top     : 20px;
+}
+
+/* Estilo del enlace para recuperar la contraseña */
+.forgot{
+    color          : var(--earth);
+    font-size      : 13px;
+    font-weight    : 400;
+    white-space    : nowrap;
+    text-decoration: none;
+}
+
+.forgot:hover{
+    color : var(--fire);
+}
+
+/* Estilo del botón de inicio de sesión */
+.login_button button{
+    border     : none;
+    background : none;
+    color      : var(--earth);
+    font       : inherit;
+    font-size  : 24px;
+    font-weight: 700;
+    cursor     : pointer;
+}
+
+.bouton{
+    text-decoration: none;
+    color: var(--earth);
+}
+.bouton:hover{
+    color: var(--fire);
+}
+
+.login_form {
+    width: min(100% - 2rem, 300px);
+}
+
+/* Permite que el enlace y el botón pasen a otra línea si falta espacio */
+.login_button {
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.forgot {
+    white-space: normal;
+}
+

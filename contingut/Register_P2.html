@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description"
+        content="Virtual Art Meseum is a website that allows you to explore and discover art from around the world.">
+
+    <title>Virtual Art Museum | Register</title>
+
+    <link rel="stylesheet" href="../style/general.css">
+    <link rel="stylesheet" href="../style/Register_P2.css">
+</head>
+
+<body>
+    <!-- Encabezado con el título y la frase de bienvenida -->
+    <header class="form-header">
+        <div class="header-text">
+            <h1>Create your account</h1>
+            <p class="intro">Your journey into art starts here.</p>
+        </div>
+    </header>
+
+    <!-- Contenido principal de la página de registro -->
+    <main class="register-card">
+        <section class="form-panel">
+            <form class="reg2_form">
+
+                <!-- Campo opcional para seleccionar una foto de perfil -->
+                <div class="photo-field">
+                    <input type="file" id="photo" name="photo" class="photo" accept="image/*"><br>
+                    <label for="photo">Choose a photo</label>
+                </div>
+
+                <!-- Datos personales obligatorios -->
+                <div class="fields">
+                    <div class="field">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" autocomplete="given-name" required>
+                    </div>
+
+                    <div class="field">
+                        <label for="lastName">Last name</label>
+                        <input type="text" id="lastName" name="lastName" autocomplete="family-name" required>
+                    </div>
+
+                    <div class="field">
+                        <label for="birthDay">Birth date</label>
+                        <input type="date" id="birthDay" name="birthDay" autocomplete="bday" required>
+                    </div>
+
+                    <div class="field">
+                        <label for="phoneNumber">Phone number</label>
+                        <input type="tel" id="phoneNumber" name="phoneNumber" autocomplete="tel" required>
+                    </div>
+
+                    <div class="field full-width">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="email" autocomplete="email" required>
+                    </div>
+
+                    <div class="field full-width">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" autocomplete="new-password" required>
+                    </div>
+                </div>
+
+                <!-- Botón de registro -->
+                <button type="submit" class="submit"><a href="./Navegador.html" class="bouton">Register</a></button>
+            </form>
+        </section>
+
+    </main>
+    <footer class="footer">
+        <a class="brand" href="./Home.html">Virtual Art Museum.</a>
+        <p>Where art comes to life.</p>
+    </footer>
+
+    <!-- Muestra una vista previa de la foto seleccionada como fondo del campo de selección. -->
+    <script>
+        const inputPhoto = document.querySelector("#photo");
+
+        let photoUrl;
+
+        inputPhoto.addEventListener("change", () => {
+            const file = inputPhoto.files[0];
+
+            if (!file) return;
+
+            if (photoUrl) {
+                URL.revokeObjectURL(photoUrl);
+            }
+
+            photoUrl = URL.createObjectURL(file);
+
+            inputPhoto.style.backgroundImage = `url("${photoUrl}")`;
+        });
+    </script>
+    <script src="../script/script.js"></script>
+</body>
+
+</html>

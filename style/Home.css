@@ -1,0 +1,92 @@
+/* estyl de la pagina de inicio */
+
+/* Contenedor principal que ocupa como mínimo toda la altura de la ventana */
+.home{
+    position  : relative;
+    min-height: 100vh;
+    overflow  : hidden;
+    display   : flex;
+}
+
+/* Bloque que contiene el título, el lema y los enlaces de navegación */
+.home_text{
+    position      : relative;
+    z-index       : 1;
+    width         : min(55%, 640px);
+    padding       : clamp(1.5rem, 5vw, 4rem);
+    display       : flex;
+    flex-direction: column;
+}
+
+/* Tamaño y altura de línea del título principal */
+.home_title{
+    font-size  : 70px;
+    line-height: 1.1;
+}
+
+/* Estilo del lema que aparece debajo del título */
+.home_tagline{
+    margin-top : 15px;
+    font-size  : 40px;
+    font-weight: 600;
+    color      : var(--fire);
+}
+
+
+/* Espacio entre el lema y los enlaces de navegación */
+.home_nav{
+    margin-top: 70px;
+}
+
+/* Estilo de los enlaces para iniciar sesión y registrarse */
+.home_nav a{
+    width          : fit-content;
+    font-size      : 30px;
+    font-weight    : 600;
+    color          : var(--earth);
+    text-decoration: none;
+    cursor         : pointer;
+
+}
+
+.home_nav a:hover{
+    color : var(--fire);
+}
+
+/* Coloca la ilustración abajo a la derecha y mantiene sus proporciones */
+.home_art{
+    position       : absolute;
+    right          : 0;
+    bottom         : 0;
+    height         : 100%;
+    max-width      : 50%;
+    object-fit     : contain;
+    object-position: right bottom;
+}
+
+/* En pantallas de 700 px o menos, coloca la imagen debajo del texto */
+@media (max-width: 700px) {
+    .home {
+        flex-direction: column;
+        overflow      : visible;
+    }
+
+    .home_text {
+        width: 100%;
+    }
+
+    .home_title {
+        font-size: 2.5rem;
+    }
+
+    .home_tagline {
+        font-size: 1.5rem;
+    }
+
+    .home_art {
+        position: static;
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+}
