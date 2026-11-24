@@ -11,6 +11,18 @@
     
 }
 
+.login_form .fields {
+    display: flex;
+    flex-direction: column;
+    gap: 16px; /* Espace entre les groupes */
+}
+
+.login_form .field {
+    display: flex;
+    flex-direction: column;
+    gap: 4px; /* Espace entre le label et son input */
+}
+
 h1{
     text-decoration: underline;
 }
@@ -22,7 +34,9 @@ h1{
     gap           : 28px;
     width         : 300px;
 }
-
+.login_form label{
+    position: relative;
+}
 /* Aplica una sombra de distinto color a cada campo */
 .name{
     border-color: var(--salmon);

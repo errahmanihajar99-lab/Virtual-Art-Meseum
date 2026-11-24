@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="description" content="Virtual Art Meseum is a website that allows you to explore and discover art from around the world.">
 
-    <title>Virtual Art Meseum | Login</title>
+    <title>Virtual Art Museum | Login</title>
     
     <link rel="stylesheet" href="../style/general.css">
     <link rel="stylesheet" href="../style/Login.css">
@@ -21,14 +21,30 @@
         <!-- Formulario de inicio de sesión -->
         <form class="login_form">
 
-            <!-- Campos obligatorios: nombre, correo electrónico y contraseña -->
-            <input type="text" class="name" name="name" placeholder="Name" required>
-            <input type="email" class="email" name="email" placeholder="E-mail" required>
-            <input type="password" class="password" name="password" placeholder="password" required>
+                <!-- Campos obligatorios: nombre, correo electrónico y contraseña -->
+            <div class="fields">
+                    <div class="field">
+                    <label for="username">user name</label>
+                    <input type="text" id="username" name="name" class="name" placeholder="Name" autocomplete="username" required>
+                </div>
+
+                <div class="field">
+                    <label for="email">email</label>
+                    <input type="email" id="email" name="email" class="email" placeholder="E-mail" autocomplete="email" required>
+                </div>
+
+                <div class="field">
+                    <label for="password">password</label>
+                    <input type="password" id="password" name="password" class="password" placeholder="password" autocomplete="new-password" required>
+                </div>
+             </div>
+            
+            
+            
 
             <div class="login_button">
                 <!-- Enlace para recuperar la contraseña -->
-                <a href="" class="forgot"> I forgot the passe word</a>
+                <a href="" class="forgot"> I forgot the password</a>
 
                 <!-- Botón de inicio de sesión -->
                 <button type="submit"><a href="./Navegador.html" class="bouton">Login</a></button>
