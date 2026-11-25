@@ -28,7 +28,7 @@
     <!-- Contenido principal de la página de registro -->
     <main class="register-card">
         <section class="form-panel">
-            <form class="reg2_form">
+            <form class="reg2_form" method="Post" action="../PDO/Register-action.php" enctype="multipart/form-data">
 
                 <!-- Campo opcional para seleccionar una foto de perfil -->
                 <div class="photo-field">

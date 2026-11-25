@@ -22,7 +22,7 @@
         <h1>Welcome back!</h1>
 
         <!-- Formulario de inicio de sesión -->
-        <form class="login_form">
+        <form class="login_form" method="get" action="../PDO/Login-action.php" >
 
                 <!-- Campos obligatorios: nombre, correo electrónico y contraseña -->
             <div class="fields">

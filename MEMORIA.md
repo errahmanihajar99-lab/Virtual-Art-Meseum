@@ -5,5 +5,9 @@ Virtual Art Museum est un site web qui vous permet de consulter des oeuvres pers
 
 ## Architecture et base de données
 ## Réalisation
+# Creation des pages et styles
+# Creation de base de donnee
+# Creationde connexion PDO
+# Relier les formulaires à GET et POST 
 ## Tests et résultats
 ## Difficultés et bilan

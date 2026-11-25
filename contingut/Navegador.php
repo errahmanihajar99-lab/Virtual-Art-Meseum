@@ -67,6 +67,10 @@
                 </article>
 
             </div>
+
+            <nav aria-label="Pagination">
+                <a href="Navegador.php?page=2#collection">Next</a>
+            </nav>
         </section>
     </main>
 
