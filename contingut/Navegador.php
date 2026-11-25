@@ -53,43 +53,19 @@
 
             <!-- Cada tarjeta muestra una obra, su categoría y su título, y enlaza a la imagen. -->
             <div class="gallery">
-                <article>
-                    <a class="art-card" href="../image/chamaa.webp">
-                        <div class="art-image">
-                            <img src="../image/chamaa.webp" alt="lit candle" loading="lazy">
-                        </div>
 
+                <article>
+                    <a class="art-card" href="../image/oeuvres/chamaa.webp">
+                        <div class="art-image">
+                            <img src="../image/oeuvres/chamaa.webp" alt="Lit candle" loading="lazy">
+                        </div>
+                
                         <div class="art-caption">
-                            <p class="category">Architecture</p>
-                            <h3>Quiet corners</h3>
+                            <h3>Chamaa</h3>
                         </div>
                     </a>
                 </article>
 
-                <article>
-                    <a class="art-card" href="../image/beyond the clouds.webp">
-                        <div class="art-image">
-                            <img src="../image/beyond the clouds.webp" alt="clouds" loading="lazy">
-                        </div>
-
-                        <div class="art-caption">
-                            <p class="category">Places &amp; stories</p>
-                            <h3>Beyond the clouds</h3>
-                        </div>
-                    </a>
-                </article>
-
-                <article>
-                    <a class="art-card" href="../image/coeur.webp">
-                        <div class="art-image">
-                            <img src="../image/coeur.webp" alt="heart" loading="lazy">
-                        </div>
-                        <div class="art-caption">
-                            <p class="category">Expression</p>
-                            <h3>A little feeling</h3>
-                        </div>
-                    </a>
-                </article>
             </div>
         </section>
     </main>

@@ -31,8 +31,8 @@
 
             <!-- Enlaces para iniciar sesión o crear una cuenta -->
             <nav class="home_nav">
-                <a href="Login.html">Login</a><br>
-                <a href="Register.html">Register</a>
+                <a href="Login.php">Login</a><br>
+                <a href="Register.php">Register</a>
             </nav>
         </div>
 
@@ -43,7 +43,7 @@
 
     <!-- Pie de página con un enlace al inicio y el lema del museo -->
     <footer class="footer">
-        <a class="brand" href="./Home.html">Virtual Art Museum.</a>
+        <a class="brand" href="./index.php">Virtual Art Museum.</a>
         <p>Where art comes to life.</p>
     </footer>
     
