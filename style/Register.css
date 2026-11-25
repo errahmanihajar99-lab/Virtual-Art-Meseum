@@ -51,7 +51,7 @@ body {
 
     cursor: pointer;
 
-    background: url("../image/van-gogh.webp") center / cover no-repeat;
+    background: url("../image/arrPlan/van-gogh.webp") center / cover no-repeat;
 
     /* Masquer le texte du champ */
     color    : transparent;

@@ -12,7 +12,7 @@
     <!-- Título que aparece en la pestaña del navegador -->
     <title>Virtual Art Museum</title>
 
-    <link rel="icon" type="image/png" href="../image/favicon.webp">
+    <link rel="icon" type="image/png" href="../image/favicon/favicon.webp">
 
     <!-- Hoja de estilos general y hoja de estilos de la página de inicio -->
     <link rel="stylesheet" href="../style/general.css">
@@ -32,12 +32,12 @@
             <!-- Enlaces para iniciar sesión o crear una cuenta -->
             <nav class="home_nav">
                 <a href="Login.html">Login</a><br>
-                <a href="Register_P1.html">Register</a>
+                <a href="Register.html">Register</a>
             </nav>
         </div>
 
         <!-- Imagen de una iglesia que ilustra la página de inicio -->
-        <img src="../image/Iglesia.webp" alt="church" class="home_art">
+        <img src="../image/arrPlan/Iglesia.webp" alt="church" class="home_art">
     </main>
 
 

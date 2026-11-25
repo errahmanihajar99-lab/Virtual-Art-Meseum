@@ -9,7 +9,7 @@
 
     <title>Virtual Art Museum | Login</title>
 
-    <link rel="icon" type="image/png" href="../image/favicon.webp">
+    <link rel="icon" type="image/png" href="../image/favicon/favicon.webp">
 
     
     <link rel="stylesheet" href="../style/general.css">

@@ -13,7 +13,7 @@
     <link rel="icon" type="image/png" href="../image/favicon.webp">
 
     <link rel="stylesheet" href="../style/general.css">
-    <link rel="stylesheet" href="../style/Register_P2.css">
+    <link rel="stylesheet" href="../style/Register.css">
 </head>
 
 <body>

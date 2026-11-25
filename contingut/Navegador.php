@@ -8,11 +8,11 @@
 
     <title>Explore | Virtual Art Museum</title>
     
-    <link rel="icon" type="image/png" href="../image/favicon.webp">
+    <link rel="icon" type="image/png" href="../image/favicon/favicon.webp">
 
 
     <link rel="stylesheet" href="../style/general.css">
-    <link rel="stylesheet" href="../style/navegador.css">
+    <link rel="stylesheet" href="../style/Navegador.css">
 </head>
 
 <body>
@@ -38,7 +38,7 @@
             </div>
             <div class="hero-art">
                 <span class="colour-block" aria-hidden="true"></span>
-                <img src="../image/Iglesia.webp" alt="Watercolour illustration of a stone church" width="600" height="600">
+                <img src="../image/arrPlan/Iglesia.webp" alt="Watercolour illustration of a stone church" width="600" height="600">
             </div>
         </section>
 
