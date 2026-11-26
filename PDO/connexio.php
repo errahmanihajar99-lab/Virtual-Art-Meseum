@@ -3,13 +3,13 @@
 $host = "localhost";
 $port = "3307";
 $dbname = "prjf01_hajar_errahmani";
-$username = "root";
+$dbUsername = "root";
 $password = "";
 
 try{
     $connexio = new PDO(
         "mysql:host=$host;port=$port;dbname=$dbname;charset=utf8mb4",
-            $username,
+            $dbUsername,
             $password
     );
 
@@ -18,7 +18,6 @@ try{
         PDO::ERRMODE_EXCEPTION
     );
 
-    echo "Connexion réussie";
 }catch(PDOException $e){
     exit("problème de connexion");
 }

@@ -1,3 +1,18 @@
+<?php
+    session_start();
+
+    //recuperer les valeurs 
+    $old = $_SESSION['register_old'] ?? [];
+    $erreur = $_SESSION['register_error'] ?? '';
+    
+    $prenom = $old['name'] ?? '';
+    $nom = $old['lastName'] ?? '';
+    $dateNaissance = $old['birthDay'] ?? '';
+    $telephone = $old['phoneNumber'] ?? '';
+    $email = $old['email'] ?? '';
+    
+    unset($_SESSION['register_old'], $_SESSION['register_error']);
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -40,32 +55,32 @@
                 <div class="fields">
                     <div class="field">
                         <label for="name">Name</label>
-                        <input type="text" id="name" name="name" autocomplete="given-name" required>
+                        <input type="text" id="name" name="name" autocomplete="given-name" value="<?= htmlspecialchars($prenom, ENT_QUOTES, 'UTF-8'); ?>" required>
                     </div>
 
                     <div class="field">
                         <label for="lastName">Last name</label>
-                        <input type="text" id="lastName" name="lastName" autocomplete="family-name" required>
+                        <input type="text" id="lastName" name="lastName" autocomplete="family-name" value="<?= htmlspecialchars($nom, ENT_QUOTES, 'UTF-8'); ?>" required>
                     </div>
 
                     <div class="field">
                         <label for="birthDay">Birth date</label>
-                        <input type="date" id="birthDay" name="birthDay" autocomplete="bday" required>
+                        <input type="date" id="birthDay" name="birthDay" autocomplete="bday" value="<?= htmlspecialchars($dateNaissance, ENT_QUOTES, 'UTF-8'); ?>" required>
                     </div>
 
                     <div class="field">
                         <label for="phoneNumber">Phone number</label>
-                        <input type="tel" id="phoneNumber" name="phoneNumber" autocomplete="tel" required>
+                        <input type="tel" id="phoneNumber" name="phoneNumber" autocomplete="tel" value="<?= htmlspecialchars($telephone, ENT_QUOTES, 'UTF-8'); ?>" required>
                     </div>
 
                     <div class="field full-width">
                         <label for="email">E-mail</label>
-                        <input type="email" id="email" name="email" autocomplete="email" required>
+                        <input type="email" id="email" name="email" autocomplete="email" value="<?= htmlspecialchars($email, ENT_QUOTES, 'UTF-8'); ?>" required>
                     </div>
 
                     <div class="field full-width">
                         <label for="password">Password</label>
-                        <input type="password" id="password" name="password" autocomplete="new-password" required>
+                        <input type="password" id="password" name="password" autocomplete="new-password" value="<?= htmlspecialchars($motDePasse, ENT_QUOTES, 'UTF-8'); ?>" required>
                     </div>
                 </div>
 
